@@ -1,0 +1,8 @@
+name: feed-generator
+services:
+- environment_slug: node-js
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: levhita/feed-generator
+  name: feed-generator

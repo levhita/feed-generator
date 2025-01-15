@@ -10,7 +10,8 @@
     "publishFeed": "ts-node scripts/publishFeedGen.ts",
     "unpublishFeed": "ts-node scripts/unpublishFeedGen.ts",
     "start": "ts-node src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "build:digitalocean": "npm install -g && tsc"
   },
   "dependencies": {
     "@atproto/api": "^0.6.20",
