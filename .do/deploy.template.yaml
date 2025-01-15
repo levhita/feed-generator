@@ -20,7 +20,7 @@ spec:
         value: ""
         type: SECRET
       - key: FEEDGEN_PORT
-        value: 3000
+        value: "3000"
       - key: FEEDGEN_LISTENHOST
         value: "localhost"
       - key: FEEDGEN_SUBSCRIPTION_ENDPOINT
@@ -32,7 +32,7 @@ spec:
       - key: FEEDGEN_SERVICE_DID
         value: "did:plc:abcde..."
       - key: FEEDGEN_SUBSCRIPTION_RECONNECT_DELAY
-        value: 3000
+        value: "3000"
       
 
     name: feed-generator
