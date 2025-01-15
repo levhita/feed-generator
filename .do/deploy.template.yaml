@@ -21,7 +21,7 @@ spec:
         type: SECRET
       - key: FEEDGEN_PORT
         value: 3000
-      - key:FEEDGEN_LISTENHOST
+      - key: FEEDGEN_LISTENHOST
         value: "localhost"
       - key: FEEDGEN_SUBSCRIPTION_ENDPOINT
         value: "wss://bsky.network"
