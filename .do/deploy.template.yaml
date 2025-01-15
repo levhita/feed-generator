@@ -5,4 +5,17 @@ spec:
     git:
       branch: main
       repo_clone_url: https://github.com/levhita/feed-generator.git
+    http_port: 3000
+    run_command: npm start
+    build_command: npm run build:digitalocean
+    envs:
+      - key: EMAIL
+        scope: RUN_TIME
+      - key: FEEDGEN_MYSQL_HOST
+        value: ""
+      - key: FEEDGEN_MYSQL_user
+        value: ""
+      - key: FEEDGEN_MYSQL_PASSWORD
+        value: ""
+        type: SECRET
     name: feed-generator
