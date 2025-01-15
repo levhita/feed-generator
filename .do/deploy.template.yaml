@@ -10,8 +10,6 @@ spec:
     run_command: npm start
     build_command: npm run build:digitalocean
     envs:
-      - key: EMAIL
-        scope: RUN_TIME
       - key: FEEDGEN_MYSQL_HOST
         value: ""
       - key: FEEDGEN_MYSQL_user
@@ -33,6 +31,4 @@ spec:
         value: "did:plc:abcde..."
       - key: FEEDGEN_SUBSCRIPTION_RECONNECT_DELAY
         value: "3000"
-      
-
     name: feed-generator
