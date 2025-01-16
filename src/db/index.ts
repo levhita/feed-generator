@@ -5,18 +5,13 @@ import { DatabaseSchema } from './schema'
 import { migrationProvider } from './migrations'
 
 dotenv.config();
-const mysqlHost=process.env.FEEDGEN_MYSQL_HOST;
-const mysqlUser=process.env.FEEDGEN_MYSQL_USER;
-const mysqlPassword=process.env.FEEDGEN_MYSQL_PASSWORD;
-
-
 const dialect = new MysqlDialect({
   pool: createPool({
-    database: 'yamodev',
-    host: mysqlHost,
-    user: mysqlUser,
-    password: mysqlPassword,
-    port: 3306,
+    database: process.env.FEEDGEN_MYSQL_DATABASE,
+    host: process.env.FEEDGEN_MYSQL_HOST,
+    user: process.env.FEEDGEN_MYSQL_USER,
+    password: process.env.FEEDGEN_MYSQL_PASSWORD,
+    port: process.env.FEEDGEN_MYSQL_PORT,
     connectionLimit: 10,
   })
 })

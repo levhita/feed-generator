@@ -12,11 +12,15 @@ spec:
     envs:
       - key: FEEDGEN_MYSQL_HOST
         value: ""
-      - key: FEEDGEN_MYSQL_user
+      - key: FEEDGEN_MYSQL_USER
         value: ""
       - key: FEEDGEN_MYSQL_PASSWORD
         value: ""
         type: SECRET
+      - key: FEEDGEN_MYSQL_PORT
+        value: "3306"
+      - key: FEEDGEN_MYSQL_DATABASE
+        value: ""
       - key: FEEDGEN_PORT
         value: "3000"
       - key: FEEDGEN_LISTENHOST
